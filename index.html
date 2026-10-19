@@ -4,73 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laudano e Misture | Ferrara Poisoned Lab</title>
+    <meta name="description" content="Laudano e Misture, Poisoned Lab a Ferrara: cocktail d'autore tra erbe officinali, infusioni e alchimie liquide.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- HEADER -->
     <header>
-        <div class="logo">Laudano e Misture</div>
+        <a href="#" class="brand">
+            <span class="seal"><img src="Logo.jpg" alt=""></span>
+            <span>Laudano e Misture</span>
+        </a>
         <nav>
             <a href="#laboratorio">Il Laboratorio</a>
             <a href="#cocktail">I Cocktail</a>
             <a href="#prenota" class="btn-nav">Prenota</a>
         </nav>
     </header>
-    
-    <!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <img src="Logo.jpg" alt="Logo Laudano e Misture" class="main-logo">
-        <h1>Laudano e Misture</h1>
-        <h2>Ferrara Poisoned Lab</h2>
-        <p>Non semplici cocktail, ma alchimie liquide...</p>
-        <a href="#cocktail" class="btn">Scopri le nostre misture</a>
-    </div>
-</section>
 
-    <!-- LABORATORIO -->
-    <section id="laboratorio" class="section">
-        <h2>L'Arte della Miscelazione</h2>
-        <div class="divider"></div>
-        <p>Benvenuti nel nostro Poisoned Lab. Da Laudano e Misture non ci limitiamo a servire drink: studiamo, maceriamo e infondiamo. Ogni ricetta è un esperimento, un equilibrio perfetto tra erbe officinali, alcolici pregiati e segreti che si tramandano da generazioni. Un angolo di Ferrara dove il tempo si ferma e i sensi si risvegliano.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="seal"><img src="Logo.jpg" alt="Laudano e Misture — logo"></span>
+            <h1 class="sr-only">Laudano e Misture</h1>
+            <p class="eyebrow">Ferrara Poisoned Lab</p>
+            <h2>Non semplici cocktail,<br>ma alchimie liquide.</h2>
+            <a href="#cocktail" class="btn">Scopri le nostre misture</a>
+        </div>
     </section>
 
-    <!-- COCKTAIL -->
+    <section id="laboratorio" class="section paper">
+        <div class="section-inner">
+            <span class="kicker">Il Laboratorio</span>
+            <h2>L'Arte della Miscelazione</h2>
+            <div class="divider"></div>
+            <p>Benvenuti nel nostro Poisoned Lab. Da Laudano e Misture non ci limitiamo a servire drink: studiamo, maceriamo e infondiamo. Ogni ricetta è un esperimento, un equilibrio perfetto tra erbe officinali, alcolici pregiati e segreti che si tramandano da generazioni. Un angolo di Ferrara dove il tempo si ferma e i sensi si risvegliano.</p>
+        </div>
+    </section>
+
     <section id="cocktail" class="section dark-bg">
+        <span class="kicker">La nostra farmacopea</span>
         <h2>I Nostri Veleni</h2>
         <div class="divider"></div>
         <div class="cocktail-grid">
-            
-            <div class="cocktail-card">
+
+            <article class="cocktail-card">
+                <span class="num">N° I</span>
                 <h3>L'Oppio dei Popoli</h3>
-                <p class="ingredienti">Gin infuso al papavero, sciroppo di miele e lavanda, succo di limone fresco.</p>
+                <p class="ingredienti">Gin infuso al papavero · sciroppo di miele e lavanda · succo di limone fresco</p>
                 <p class="storia">Un drink seducente e vellutato, che avvolge il palato in un abbraccio speziato.</p>
-            </div>
+            </article>
 
-            <div class="cocktail-card">
+            <article class="cocktail-card">
+                <span class="num">N° II</span>
                 <h3>L'Elisir del Duca</h3>
-                <p class="ingredienti">Rye Whiskey, bitter artigianale ferrarese, assenzio, scorza d'arancia bruciata.</p>
+                <p class="ingredienti">Rye whiskey · bitter artigianale ferrarese · assenzio · scorza d'arancia bruciata</p>
                 <p class="storia">Un tributo alla storia della città: forte, deciso, con un finale affumicato.</p>
-            </div>
+            </article>
 
-            <div class="cocktail-card">
+            <article class="cocktail-card">
+                <span class="num">N° III</span>
                 <h3>La Mistura del Sabba</h3>
-                <p class="ingredienti">Rum scuro, liquore al caffè, sciroppo di zucchero di canna e peperoncino.</p>
+                <p class="ingredienti">Rum scuro · liquore al caffè · sciroppo di zucchero di canna · peperoncino</p>
                 <p class="storia">Il nostro signature più audace, servito in un'atmosfera da laboratorio ottocentesco.</p>
-            </div>
+            </article>
 
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <section id="prenota" class="section prenota">
+        <div class="section-inner">
+            <span class="kicker">Prenota</span>
+            <h2>Un posto in laboratorio</h2>
+            <div class="divider"></div>
+            <div class="info">
+                <div><small>Dove</small>Via Ragno, 35 — 44121 Ferrara</div>
+                <div><small>Quando</small>Mar – Dom, 18:00 – 01:00</div>
+            </div>
+            <!-- TODO: sostituire con il numero reale o il link a WhatsApp/Instagram -->
+            <a href="tel:+390000000000" class="btn">Prenota un tavolo</a>
+        </div>
+    </section>
+
     <footer>
-        <p><strong>Laudano e Misture</strong> - Ferrara Poisoned Lab</p>
-        <p>Via Ragno, 35 - 44121 Ferrara (FE)</p>
-        <p>Mar - Dom: 18:00 - 01:00</p>
-        <p>&copy; 2024 Laudano e Misture. Tutti i diritti riservati.</p>
+        <p><strong>Laudano e Misture</strong> — Ferrara Poisoned Lab</p>
+        <p>Via Ragno, 35 · 44121 Ferrara (FE)</p>
+        <p>© 2024 Laudano e Misture. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
