@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Rye', cursive;
     font-weight: 700;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-    font-family: 'Cinzel', serif;
+    font-family: 'Rye', cursive;
     font-size: 1.5rem;
     color: #C59B5F;
     letter-spacing: 2px;
