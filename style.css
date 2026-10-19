@@ -87,27 +87,23 @@ nav .btn-nav:hover { background: var(--brass); color: var(--ink); }
 
 .hero-content { max-width: 720px; }
 
-/* Sigillo: ritaglio esatto del badge dentro Logo.jpg (sfondo nero puro),
-   così il cerchio coincide con il bordo del logo e non restano margini. */
-.seal {
-    --s: 300px;
-    display: block; position: relative; flex-shrink: 0;
+/* Targa: il logo (logo.png) ha il nastro trasparente con scritta nera,
+   quindi va su fondo chiaro. Un disco color carta lo tiene leggibile
+   su qualsiasi sfondo scuro. */
+.plate {
+    --s: 320px;
+    display: grid; place-items: center; flex-shrink: 0;
     width: var(--s); height: var(--s);
-    border-radius: 50%; overflow: hidden; background: #000;
+    border-radius: 50%; background: var(--paper);
     box-shadow:
         0 0 0 1px var(--brass),
         0 0 0 8px var(--ink),
         0 0 0 9px rgba(185,141,75,.5),
         0 30px 80px rgba(0,0,0,.85);
 }
-.seal img {
-    position: absolute; display: block; max-width: none; height: auto;
-    width: calc(var(--s) * 1.515);
-    left: calc(var(--s) * -0.2515);
-    top: calc(var(--s) * -0.2576);
-}
-.hero-content .seal { margin: 0 auto 38px; }
-.brand .seal { --s: 46px; box-shadow: 0 0 0 1px var(--brass); }
+.plate img { display: block; width: 90%; height: auto; }
+.hero-content .plate { margin: 0 auto 38px; }
+.brand .plate { --s: 48px; box-shadow: 0 0 0 1px var(--brass); }
 
 .eyebrow {
     font-size: 0.78rem; letter-spacing: 0.4em; text-transform: uppercase;
@@ -227,6 +223,6 @@ footer strong { color: var(--brass-soft); font-weight: 500; }
     nav { gap: 16px; }
     nav a { font-size: 0.68rem; letter-spacing: 0.14em; }
     nav .btn-nav { padding: 7px 12px; }
-    .hero-content .seal { --s: 230px; }
+    .hero-content .plate { --s: 250px; }
     .section { padding: 80px 20px; }
 }
